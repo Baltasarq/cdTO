@@ -1,5 +1,5 @@
-tecobject
-=========
+Tecnología de Objetos
+=====================
 
 Curso de doctorado "Tecnología de objetos"
 
