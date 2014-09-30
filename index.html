@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Curso de doctorado: Tecnologías de Objetos por Baltasarq</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Curso de doctorado: Tecnologías de Objetos</h1>
+        <h2>Curso de doctorado &quot;Tecnología de objetos&quot;<br><i></i>Post-graduate course &quot;Object technology&quot;</i></h2>
+        <a href="https://github.com/Baltasarq/cdTO" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>Temario<br><i>summary</i></h3>
+
+<ol>
+
+
+          
+          <p></p>
+
+
+          <li>Introducción
+            <br>
+
+
+            <i>(introduction)</i>
+            
+            <p></p>
+
+
+          </li>
+
+
+          <li>El modelo de orientación a objetos
+basado en prototipos.
+            <br>
+
+
+            <i>(The prototype-based object-oriented model)</i>
+            
+            <p></p>
+
+
+          </li>
+
+
+          <li>Implantación de lenguajes orientados a
+objetos.
+            <br>
+
+
+            <i>(implementation of object-oriented languages)</i>
+            
+            <p></p>
+
+
+          </li>
+
+
+          <li>Persistencia. Su influencia en los lenguajes de
+programación. <br>
+
+
+            <i>Persistence. Its part on programming languages.</i>
+          </li>
+
+
+        
+        </ol>
+        
+        <h3>Transparencias resumen del curso, y ejercicios.<br>Presentations and exercises</h3>
+        
+        <ol>
+
+
+      
+      <p></p>
+
+
+      <li>Tema: <a href="cdTO_transparencias_prototipos_ES.pdf">Sistemas
+orientados a objetos basados en prototipos</a>.
+        <br>
+
+
+        <i><a href="cdTO_transparencias_prototipos_ES.pdf">(Object-Oriented,
+prototypye-based Systems)</a></i>
+        
+        <ul>
+
+
+          
+          <p></p>
+
+
+          <li><a href="http://baltasarq.github.io/zero/">Sistema de programación Zero</a>, creado como ejemplo de
+          sistema persistente basado en prototipos.
+            <br>
+
+
+            <i>(<a href="http://baltasarq.github.io/zero/">The Zero Programming System</a>,
+created as an example of a persistent prototype-based system.)</i>
+            
+            <p></p>
+
+
+          </li>
+
+
+          <li>Ejercicios
+            <br>
+
+
+            <i>(exercises)</i>
+            
+            <ol>
+
+
+              
+              <p></p>
+
+
+              <li>Creación de objetos. <br>
+
+
+                <i> Se trata de crear un prototipo Punto, con los
+atributos <i>x</i> e <i>y</i>, copiarlo para crear un objeto, e imprimir sus
+propiedades en pantalla. <br>
+
+
+                </i> <a href="solej1.txt">Solution</a>.
+                
+                <p>
+Object creation.<br>
+
+
+                <i>You should create the "Point" prototype, with
+the x and y attributes,
+and write its attributes on screen.
+                <br>
+
+
+                </i> <a href="solej1_eng.txt">Solution</a>.
+                </p>
+
+
+              </li>
+
+
+              <li>Herencia. <br>
+
+
+                <i> Se trata de crear un prototipo
+Línea, que tendrá dos atributos, <i>p1</i> y <i>p2</i>, que
+señalarán al prototipo Punto. Es necesario
+copiarlo para crear un objeto, e imprimir sus propiedades en pantalla. <br>
+
+
+                </i> <a href="solej2.txt">Solution</a>.
+                
+                <p>
+Inheritance. <br>
+
+
+                <i> The objective is to create the "Line"
+prototype, with two attributes
+pointing to two objects of the "Point" prototype. It is necessary to
+copy this object
+in order to create a new one, and write its attributes on screen.<br>
+
+
+                </i> <a href="solej2_eng.txt">Solution</a>.
+                </p>
+
+
+              </li>
+
+
+              <li>Polimorfismo. <br>
+
+
+                <i> Se trata de crear un prototipo Figura, del
+que heredarán Rectangulo y Circulo, implementando cada uno
+de ellos el método "calcArea()", que debe forzar el
+prototipo Figura. Debe darse opción a crear un
+círculo o un rectángulo, y, una vez creados,
+calcular su área. <br>
+
+
+                </i> <a href="solej3.txt">Solución</a>.
+                
+                <p>
+Polyphormism. <br>
+
+
+                <i> The objective is to create a "Shape"
+prototype. "Circle" and "Rectangle"
+should derive from it, implementing the "calcArea" method, mandatorily
+because of the inheritance
+from "Shape". Give the user the option to create a circle or a
+rectangle and, once created,
+calculate the are of the shape without knowing what kind of shape is
+involved.<br>
+
+
+                </i> <a href="solej3_eng.txt">Solution</a>.
+                </p>
+
+
+              </li>
+
+
+              <li>Herencia dinámica. <br>
+
+
+                <i> Se trata de, utilizando el contenedor "Map"
+proporcionado por la librería, capaz de almacenar elementos
+de forma asociativa, crear dos subprototipos, "MapaVacio", y
+"MapaNoVacio". Debe crearse un objeto que, heredando bien de uno o de
+otro, almacene elementos o no. Ésto implica cambiar el
+atributo Parent. <br>
+
+
+                </i> <a href="solej4.txt">Solución</a>.
+                
+                <p>
+Dynamic inheritance<br>
+
+
+                <i> The objective is to create, using the "Map"
+container
+of the standard library, able to store object in an associative manner,
+create two
+protoypes, "EmptyMap" and "NonEmptyMap". Create another object
+inheriting from
+these two prototypes (alternatively), when the conditions given by
+their names are met.
+This implies changing the "parent" attribute.<br>
+
+
+                </i> <a href="solej4_eng.txt">Solution</a>.
+                </p>
+
+
+              </li>
+
+
+            
+            </ol>
+
+
+          </li>
+
+
+        
+        </ul>
+
+
+        
+        <p></p>
+
+
+      </li>
+
+
+      <li>Tema: <a href="cdTO_transparencias_implementacion_OO_ES.pdf">Implementación
+de Lenguajes Orientados a Objetos</a>
+        <br>
+
+
+        <i>(<a href="cdTO_transparencias_implementacion_OO_EN.pdf">Implementation
+of object-oriented programming languages</a>)</i>
+        
+        <p></p>
+
+
+      </li>
+
+
+      <li>Tema: <a href="cdTO_transparencias_persistencia_ES.pdf">Persistencia
+en Sistemas Orientados a Objetos</a>.
+        <br>
+
+
+        <i>(<a href="cdTO_transparencias_persistencia_EN.pdf">Persistence
+in object-oriented systems</a>)</i>
+        
+        <ul>
+
+
+          
+          <p></p>
+
+
+          <li>Charla sobre <a href="http://baltasarq.github.io/charlassoopersistencia/">persistencia
+y sistemas operativos</a>,
+de la <a href="http://www.esei.uvigo.es/">Escuela Superior
+de Ingeniería Informática</a> de la <a href="http://www.uvigo.es/">Universidad de Vigo</a>.
+            
+            <p></p>
+
+
+          </li></ul>
+   
+    </ol>
+
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Baltasarq/cdTO/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Baltasarq/cdTO/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Baltasarq/cdTO"></a> is maintained by <a href="https://github.com/Baltasarq">Baltasarq</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
